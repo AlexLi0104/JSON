@@ -8,8 +8,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-eml_to_schema <- readr::read_file("jq/creator.jq")
-eml <- readr::read_file("../examples/hf205.json")
+eml_to_schema <- readr::read_file("creator.jq")
+eml <- readr::read_file("hf205.json")
 jq(eml, eml_to_schema)
 ```
 
